@@ -588,7 +588,7 @@ require("custom.sets")
 require("custom.keymaps")
 require("custom.harpoon_keymap")
 require("custom.undo_tree_keymap")
-require("custom.barbell_keymap")
+require("custom.barbar_keymap")
 require("custom.toggle_term_config")
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
