@@ -1,0 +1,24 @@
+# List of Plugins to checkout when time permits.
+
+######
+https://github.com/rockerBOO/awesome-neovim # List of awesome plugins.
+######
+Unrelated but good to know:
+https://man7.org/linux/man-pages/man5/crontab.5.html
+
+Cron is a daemon that executes commands at specified intervals. These commands are called "cron jobs." Cron is available on Unix, Linux and Mac servers. This can be used for:
+A. Updating nvim.
+B. Updating plugins in nvim.
+C. The script we have to show battery icon when we connect our laptop to power source or remove it. We can make it run every 15 seconds or so using chron instead of making the script sleep for 15 seconds.
+######
+
+https://github.com/kevinhwang91/nvim-ufo#commands # Better Folding.
+https://github.com/rmagatti/auto-session # Might be helpful when to switch between projects or maybe not.
+https://github.com/Shatur/neovim-session-manager # I think the last one creates sessions, this one manages them maybe? not sure.
+https://github.com/rcarriga/nvim-notify # Custom notifications might not be needed.
+https://github.com/sakhnik/nvim-gdb # GDB plugin for neovim might come preinstalled with Mason.
+https://github.com/chipsenkbeil/distant.nvim # Allows you to edit stuff on a remote server from your local machine. Similar to vscode remote.
+
+# If works use on of these regex plugins to help with regex.
+https://github.com/tomiis4/hypersonic.nvim # This is cool af. Prefer this one but alpha from what I can tell.
+https://github.com/bennypowers/nvim-regexplainer # This only explains regex but doesn't help with writing it, hence the above plugin is better.
