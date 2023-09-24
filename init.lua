@@ -128,12 +128,12 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-        add          = { text = '│' },
-        change       = { text = '│' },
-        delete       = { text = '_' },
-        topdelete    = { text = '‾' },
-        changedelete = { text = '~' },
-        untracked    = { text = '┆' },
+      add          = { text = '│' },
+      change       = { text = '│' },
+      delete       = { text = '_' },
+      topdelete    = { text = '‾' },
+      changedelete = { text = '~' },
+      untracked    = { text = '┆' },
       },
       on_attach = function(bufnr)
 <<<<<<< HEAD
@@ -391,7 +391,7 @@ vim.defer_fn(function()
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = true,
-  
+
     highlight = { enable = true },
     indent = { enable = true },
     incremental_selection = {
@@ -447,9 +447,9 @@ vim.defer_fn(function()
         },
       },
     },
-  },
   autotag = {
     enable = true,
+  }
   }
 end, 0)
 
@@ -594,17 +594,17 @@ cmp.setup {
     documentation = cmp.config.window.bordered()
   },
   sorting = {
-    comparators = {
-      cmp.config.compare.offset,
-      cmp.config.compare.exact,
-      cmp.config.compare.score,
-      require "cmp-under-comparator".under,
-      cmp.config.compare.kind,
-      cmp.config.compare.sort_text,
-      cmp.config.compare.length,
-      cmp.config.compare.order,
+        comparators = {
+            cmp.config.compare.offset,
+            cmp.config.compare.exact,
+            cmp.config.compare.score,
+            require "cmp-under-comparator".under,
+            cmp.config.compare.kind,
+            cmp.config.compare.sort_text,
+            cmp.config.compare.length,
+            cmp.config.compare.order,
+        },
     },
-  },
   mapping = cmp.mapping.preset.insert {
     ['<C-n>'] = cmp.mapping.select_next_item(),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
@@ -670,7 +670,7 @@ require("custom.sets")
 require("custom.keymaps")
 require("custom.harpoon_keymap")
 require("custom.undo_tree_keymap")
-require("custom.barbar_keymap")
+require("custom.barbell_keymap")
 require("custom.toggle_term_config")
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
