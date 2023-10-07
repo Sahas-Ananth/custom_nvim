@@ -390,13 +390,8 @@ vim.defer_fn(function()
     ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
-<<<<<<< HEAD
     auto_install = true,
   
-=======
-    auto_install = false,
-
->>>>>>> 6ffc5a1 (Fix Mason setup issue and run stylua.)
     highlight = { enable = true },
     indent = { enable = true },
     incremental_selection = {
