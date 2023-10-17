@@ -380,7 +380,7 @@ vim.defer_fn(function()
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = true,
 
-    highlight = { enable = true },
+    highlight = { enable = true, disable = { "latex" }, },
     indent = { enable = true },
     incremental_selection = {
       enable = true,
@@ -435,9 +435,12 @@ vim.defer_fn(function()
         },
       },
     },
-  autotag = {
-    enable = true,
-  }
+    autotag = {
+      enable = true,
+      enable_rename = true,
+      enable_close = true,
+      enable_close_on_slash = true,
+    }
   }
 end, 0)
 
@@ -658,7 +661,7 @@ require("custom.sets")
 require("custom.keymaps")
 require("custom.harpoon_keymap")
 require("custom.undo_tree_keymap")
-require("custom.barbell_keymap")
+require("custom.barbar_keymap")
 require("custom.toggle_term_config")
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
