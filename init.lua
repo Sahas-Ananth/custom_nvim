@@ -128,20 +128,14 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-      add          = { text = '│' },
-      change       = { text = '│' },
-      delete       = { text = '_' },
-      topdelete    = { text = '‾' },
-      changedelete = { text = '~' },
-      untracked    = { text = '┆' },
+        add          = { text = '│' },
+        change       = { text = '│' },
+        delete       = { text = '_' },
+        topdelete    = { text = '‾' },
+        changedelete = { text = '~' },
+        untracked    = { text = '┆' },
       },
       on_attach = function(bufnr)
-<<<<<<< HEAD
-        vim.keymap.set('n', '<leader>gp', require('gitsigns').prev_hunk,
-          { buffer = bufnr, desc = '[G]o to [P]revious Hunk' })
-        vim.keymap.set('n', '<leader>gn', require('gitsigns').next_hunk, { buffer = bufnr, desc = '[G]o to [N]ext Hunk' })
-        vim.keymap.set('n', '<leader>ph', require('gitsigns').preview_hunk, { buffer = bufnr, desc = '[P]review [H]unk' })
-=======
         vim.keymap.set('n', '<leader>hp', require('gitsigns').preview_hunk, { buffer = bufnr, desc = 'Preview git hunk' })
 
         -- don't override the built-in and fugitive keymaps
@@ -164,7 +158,6 @@ require('lazy').setup({
           end)
           return '<Ignore>'
         end, { expr = true, buffer = bufnr, desc = 'Jump to previous hunk' })
->>>>>>> 6ffc5a1 (Fix Mason setup issue and run stylua.)
       end,
     },
   },
@@ -200,7 +193,6 @@ require('lazy').setup({
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
-<<<<<<< HEAD
     config = function()
       local highlight = {
         "RainbowRed",
@@ -233,10 +225,6 @@ require('lazy').setup({
     --   char = '┊',
     --   show_trailing_blankline_indent = false,
     -- },
-=======
-    main = 'ibl',
-    opts = {},
->>>>>>> 6ffc5a1 (Fix Mason setup issue and run stylua.)
   },
 
   -- "gc" to comment visual regions/lines
@@ -594,17 +582,17 @@ cmp.setup {
     documentation = cmp.config.window.bordered()
   },
   sorting = {
-        comparators = {
-            cmp.config.compare.offset,
-            cmp.config.compare.exact,
-            cmp.config.compare.score,
-            require "cmp-under-comparator".under,
-            cmp.config.compare.kind,
-            cmp.config.compare.sort_text,
-            cmp.config.compare.length,
-            cmp.config.compare.order,
-        },
+    comparators = {
+      cmp.config.compare.offset,
+      cmp.config.compare.exact,
+      cmp.config.compare.score,
+      require "cmp-under-comparator".under,
+      cmp.config.compare.kind,
+      cmp.config.compare.sort_text,
+      cmp.config.compare.length,
+      cmp.config.compare.order,
     },
+  },
   mapping = cmp.mapping.preset.insert {
     ['<C-n>'] = cmp.mapping.select_next_item(),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
