@@ -60,6 +60,7 @@ return {
 
         -- LaTeX.
         -- null_ls.builtins.diagnostics.chktex,
+        null_ls.builtins.formatting.latexindent,
 
         -- Misc.
         -- null_ls.builtins.completion.spell,
